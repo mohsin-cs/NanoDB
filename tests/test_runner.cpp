@@ -3,30 +3,30 @@
 #include <cstring>
 
 int main(int argc, char* argv[]){
-    const char* queryFile = (argc>1) ? argv[1] : "tests/queries.txt";
+    const char* queryFile = (argc>1) ? argv[1] : "tests/queries.txt";;
 
-    FILE* logFile = fopen("nanodb_execution.log","w");
-    if(!logFile){ printf("[FATAL] Cannot open log\n"); return 1; }
-    fprintf(logFile,"=== NanoDB Test Runner ===\n");
+    FILE* logFile = fopen("nanodb_execution.log","w");;
+    if(!logFile){ printf("[FATAL] Cannot open log\n");; return 1; }
+    fprintf(logFile,"=== NanoDB Test Runner ===\n");;
     printf("=== NanoDB Test Runner ===\n");
     printf("Reading: %s\n\n", queryFile);
 
     #ifdef _WIN32
-        system("if not exist data mkdir data");
+        system("if not exist data mkdir data");;
     #else
-        system("mkdir -p data");
+        system("mkdir -p data");;
     #endif
 
-    QueryEngine eng(50, logFile);
+    QueryEngine eng(50, logFile);;
 
     // Set up TPC-H tables
     TableSchema cs;
-    cs.addCol("c_custkey",   FIELD_INT);
-    cs.addCol("c_name",      FIELD_STRING);
-    cs.addCol("c_mktsegment",FIELD_STRING);
-    cs.addCol("c_acctbal",   FIELD_FLOAT);
-    cs.addCol("c_nationkey", FIELD_INT);
-    eng.createTable("customer",cs);
+    cs.addCol("c_custkey",   FIELD_INT);;
+    cs.addCol("c_name",      FIELD_STRING);;
+    cs.addCol("c_mktsegment",FIELD_STRING);;
+    cs.addCol("c_acctbal",   FIELD_FLOAT);;
+    cs.addCol("c_nationkey", FIELD_INT);;
+    eng.createTable("customer",cs);;
 
     TableSchema os;
     os.addCol("o_orderkey",   FIELD_INT);

@@ -46,7 +46,7 @@ struct LRUList {
 
     ~LRUList(){
         DLLNode* cur = head;
-        while(cur){ DLLNode* nxt=cur->next; delete cur; cur=nxt; }
+        while (cur) { DLLNode* nxt = cur->next; delete cur; cur = nxt;; }
     }
 
     void moveToFront(DLLNode* node){

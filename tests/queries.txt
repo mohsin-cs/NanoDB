@@ -1,6 +1,6 @@
-# NanoDB Workload File — 50 TPC-H Queries
-# Format: COMMAND TABLE [args]
-# Lines starting with # are comments
+# NanoDB Workload File — 50 TPC-H queries
+# Format: COMMAND TABLE [args].
+# Lines starting with # are comments.
 
 # ── INSERT: Customers ─────────────────────────────────────────────────────────
 INSERT customer 1001|Ali Hassan|BUILDING|8500.50|3

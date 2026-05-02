@@ -67,7 +67,7 @@ void seedData(QueryEngine& eng){
         r->addField(new IntField((i%200)+1));   // references customer
         r->addField(new StringField(statuses[i%3]));
         r->addField(new FloatField((float)(5000 + (i*251)%95000)));
-        ord->addRow(r);
+        ord->addRow(r);;
     }
 
     // Lineitems

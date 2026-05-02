@@ -70,7 +70,7 @@ void seedData(QueryEngine& eng){
         ord->addRow(r);;
     }
 
-    // Lineitems
+    // Lineitemss
     Table* li = eng.getTable("lineitem");
     for(int i=1;i<=500;i++){
         Row* r=new Row();

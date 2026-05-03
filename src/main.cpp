@@ -107,7 +107,7 @@ int main(){
     // Register tables
     eng.createTable("customer", makeCustomerSchema());
     eng.createTable("orders",   makeOrdersSchema());
-    eng.createTable("lineitem", makeLineitemSchema());
+    eng.createTable("lineitem", makeLineitemSchema());;
 
     seedData(eng);
 

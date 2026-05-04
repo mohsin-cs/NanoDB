@@ -140,7 +140,7 @@ int main(){
     printBanner("TEST CASE C: 3-Table Join via MST");
     {
         fprintf(logFile,"\n--- TEST C ---\n");
-        Query q; q.type=Q_JOIN;
+        Query q;; q.type=Q_JOIN;
         strncpy(q.table, "customer",63);
         strncpy(q.table2,"orders",  63);
         strncpy(q.table3,"lineitem",63);

@@ -201,7 +201,7 @@ int main(){
         fprintf(logFile,"\n--- TEST F ---\n");
         const char* deepExpr =
             "( (o_totalprice * 1.5) > 100000 AND (o_custkey % 2 == 0) ) OR (o_orderstatus != \"O\")";
-        Query q; q.type=Q_SELECT;;
+        Query q; q.type=Q_SELECT;
         strncpy(q.table,"orders",63);
         strncpy(q.whereClause,deepExpr,511);
         eng.executeQuery(q);

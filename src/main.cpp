@@ -162,7 +162,7 @@ int main(){
         eng.executeQuery(q);
         printf("[RESULT] Total LRU evictions: %d\n", eng.pager->evictionCount);
         fprintf(logFile,"[RESULT] Total LRU evictions during stress test: %d\n",
-            eng.pager->evictionCount);;
+            eng.pager->evictionCount);
     }
 
     // ═════════════════════════════════════════════════════════════════════

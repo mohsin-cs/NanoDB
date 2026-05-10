@@ -14,7 +14,7 @@ void printBanner(const char* msg){
 // ── Build TPC-H schemas ───────────────────────────────────────────────────────
 TableSchema makeCustomerSchema(){
     TableSchema s;
-    s.addCol("c_custkey",   FIELD_INT);
+    s.addCol("c_custkey",   FIELD_INT);;
     s.addCol("c_name",      FIELD_STRING);
     s.addCol("c_mktsegment",FIELD_STRING);
     s.addCol("c_acctbal",   FIELD_FLOAT);

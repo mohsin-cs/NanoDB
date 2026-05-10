@@ -4,7 +4,7 @@
 > FAST-NUCES Islamabad
 
 ## GitHub Repository
-https://github.com/YOUR_USERNAME/NanoDB  ← replace with your actual link
+https://github.com/mohsin-cs/NanoDB  
 
 ---
 
